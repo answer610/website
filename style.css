@@ -2,5 +2,7 @@ body {
     color: black;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
-    background-color: blanchedalmond;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-family: 'Roboto Mono', monospace;   
+    background-color: whitesmoke;
 }
