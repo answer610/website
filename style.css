@@ -1,13 +1,33 @@
 body {
-    color: white;
-    font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: black;
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
+  color: white;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+.pic {
+  float: left;
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+.intro {
+  margin-top: 50px;
+  line-height: 2;
+}
+.rest {
+  clear: left;
+  display: block;
+}
+.courses {
+  line-height: 1.5;
+}
+.dark-mode {
+  color: black;
+  background-color: white;
 }
 .icon1 {
   position: absolute;
@@ -25,34 +45,34 @@ body {
   right: 50px;
 }
 .icon4 {
-    position: absolute;
-    top: 20px;
-    right: 0;
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
   
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
   
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
   
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
 .center {
     display: block;
@@ -61,4 +81,63 @@ body {
 }
 a:visited {
     color: white;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-image: "images/moon.jpeg";
+  background-size: cover;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
