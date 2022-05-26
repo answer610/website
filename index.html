@@ -8,22 +8,13 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div>
-            <h3 style = "display: inline-block"><a id="tab1" href="index.html">About Me</a></h3> 
-            <h3 style = "display: inline-block">&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-            <h3 style = "display: inline-block"><a id="tab2" href="projects.html">Projects</a></h3>
-            <a href="https://drive.google.com/file/d/1Q5s5ZZsDVvbAvu3fo9UxHZvYbpblpMIN/view?usp=sharing" target="_blank" style="text-decoration: none; display: inline-block">
-                <img id="Resume" src="images/resumelogo.png" width="40" height="40" class="icon1"/>
-            </a>
-            <a href="https://www.linkedin.com/in/an-le-048523197/" target="_blank" style = "text-decoration: none; display: inline-block">
-                <img id="LinkedIn" src="images/linkedinlogo.png" width="40" height="40" class="icon2"/> 
-            </a>
-            <a href="https://github.com/answer610" target="_blank" style = "text-decoration: none; display: inline-block">
-                <img id="GitHub" src="images/githublogo2.png" width="40" height="40" class="icon3"/>
-            </a>
-            <a id="WCA" href="https://www.worldcubeassociation.org/persons/2015LEAN01" target="_blank" style = "text-decoration: none; display: inline-block">
-                <img id="wca" src="images/rubik_dark.png" width="40" height="40" class="icon4"/>
-            </a>
+        &nbsp;
+        <div class="tabs">
+            <button onclick="showTabs()" id="button" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a id="tab1" href="index.html">About Me</a> 
+                <a id="tab2" href="projects.html">Projects</a>
+            </div>
         </div>
         <div>
             <img src="images/profile_pic2.jpg" alt="Profile Picture" width="300" height="300" class="pic"/>
@@ -35,6 +26,21 @@
         </div>
         &nbsp;
         <div class="rest">
+            <a href="mailto:anl2002@berkeley.edu" target="_blank" style="text-decoration: none; display: inline-block">
+                <img id="Mail" src="images/mail_black.png" width="30" height="30" class="icon0"/>
+            </a>
+            <a href="https://drive.google.com/file/d/1Q5s5ZZsDVvbAvu3fo9UxHZvYbpblpMIN/view?usp=sharing" target="_blank" style="text-decoration: none; display: inline-block">
+                <img id="Resume" src="images/resumelogo.png" width="30" height="30" class="icon1"/>
+            </a>
+            <a href="https://www.linkedin.com/in/an-le-048523197/" target="_blank" style = "text-decoration: none; display: inline-block">
+                <img id="LinkedIn" src="images/linkedinlogo.png" width="30" height="30" class="icon2"/> 
+            </a>
+            <a href="https://github.com/answer610" target="_blank" style = "text-decoration: none; display: inline-block">
+                <img id="GitHub" src="images/githublogo2.png" width="30" height="30" class="icon3"/>
+            </a>
+            <a id="WCA" href="https://www.worldcubeassociation.org/persons/2015LEAN01" target="_blank" style = "text-decoration: none; display: inline-block">
+                <img id="wca" src="images/rubik_dark.png" width="30" height="30" class="icon4"/>
+            </a>
             <h2>Relevant Coursework</h2>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;* = currently taking</p>
             <ul class="courses">
@@ -58,7 +64,7 @@
                 <p>Libraries: NumPy</p>
             </ul>
             <label class="switch">
-                <input id = "switch" type="checkbox" onclick="lightMode()">
+                <input id = "switch" type="checkbox" onclick="lightModeIndex()">
                 <span class="slider round"></span>
             </label>
         </div>

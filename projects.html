@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
         <title>Projects</title> 
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
-        <h3 style = "display: inline-block"><a href="index.html">About Me</a></h3> 
-        <h3 style = "display: inline-block">&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-        <h3 style = "display: inline-block"><a href="projects.html">Projects</a></h3>
+        &nbsp;
+        <div class="tabs">
+            <button onclick="showTabs()" id="button" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a id="tab1" href="index.html">About Me</a> 
+                <a id="tab2" href="projects.html">Projects</a>
+            </div>
+        </div>
         <h3>*To be added.</h3>
         <h2>Scheme Interpreter</h2>
         <div>
@@ -25,5 +33,9 @@
         <div>
             <p></p>
         </div>
+        <label class="switch">
+            <input id = "switch" type="checkbox" onclick="lightModeProject()">
+            <span class="slider round"></span>
+        </label>
     </body>
 </html>
