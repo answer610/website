@@ -1,7 +1,7 @@
 body {
   color: white;
   font-size: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik';
   background-color: black;
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
@@ -9,8 +9,17 @@ body {
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
 }
+.top_line {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+h1 {
+  text-align: center;
+}
 .tabs{
-  float: right;
+  position: absolute;
+  right: 0;
 }
 .dropbtn {
   background-image: url("images/menu_white.png");

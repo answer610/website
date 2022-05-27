@@ -5,33 +5,54 @@
     <head>
         <title>Projects</title> 
         <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
         <script src="script.js"></script>
     </head>
     <body>
-        &nbsp;
-        <div class="tabs">
-            <button onclick="showTabs()" id="button" class="dropbtn"></button>
-            <div id="myDropdown" class="dropdown-content">
-                <a id="tab1" href="index.html">About Me</a> 
-                <a id="tab2" href="projects.html">Projects</a>
+        <div class="top_line">
+            <h1>Projects</h1>
+            <div class="tabs">
+                <button onclick="showTabs()" id="button" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a id="tab1" href="index.html">About Me</a> 
+                    <a id="tab2" href="projects.html">Projects</a>
+                    <a id="tab3" href="cubing.html">Speedcubing</a>
+                </div>
             </div>
         </div>
-        <h3>*To be added.</h3>
+        <h3>*In progress.</h3>
         <h2>Scheme Interpreter</h2>
         <div>
-            <p></p>
+            <ul>
+                <li>Interpreter for a subset of the Scheme language written in Python.</li>
+                <li>Can read, evaluate, and display results for a subset of Scheme expressions.</li>
+            </ul>
         </div>
         <h2>BearMaps</h2>
         <div>
-            <p></p>
+            <ul>
+                <li>Mapping API for the city of Berkeley.</li>
+                <li>Developed backend features in Java.</li>
+                <li>Wrote KD-Tree and A-Star Search implementations.</li>
+                <li>Verified funcitonality with JUnit testing.</li>
+            </ul>
         </div>
         <h2>Build Your Own World</h2>
         <div>
-            <p></p>
+            <ul>
+                <li>2D random-generated maze game written in Java.</li>
+                <li>Features selections of difficulty, avatar, and map.</li>
+                <li>Implemented saving and loading features.</li>
+                <li>Verified funcitonality with JUnit testing.</li>
+            </ul>
         </div>
         <h2>NumC</h2>
         <div>
-            <p></p>
+            <ul>
+                <li>Miniature version of the NumPy library written in C.</li>
+                <li>Features basic matrix operations such as addition and multiplication.</li>
+                <li>Used SIMD and OpenMP to optimize matrix operations with an overall speedup of 50x.</li>
+            </ul>
         </div>
         <label class="switch">
             <input id = "switch" type="checkbox" onclick="lightModeProject()">
