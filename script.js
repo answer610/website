@@ -9,6 +9,7 @@ function lightModeIndex() {
         document.getElementById("wca").src = "images/rubik.png";
         document.getElementById("tab1").style.color = "black";
         document.getElementById("tab2").style.color = "black";
+        document.getElementById("tab3").style.color = "black";
         document.getElementById("button").style.backgroundImage = "url('images/menu_black.png')";
         document.getElementById("button").style.backgroundColor = "white";
     } else {
@@ -19,27 +20,29 @@ function lightModeIndex() {
         document.getElementById("wca").src = "images/rubik_dark.png";
         document.getElementById("tab1").style.color = "white";
         document.getElementById("tab2").style.color = "white";
+        document.getElementById("tab3").style.color = "white";
         document.getElementById("button").style.backgroundImage = "url('images/menu_white.png')";
         document.getElementById("button").style.backgroundColor = "black";
     }
 }
 
-function lightModeProject() {
+function lightModeNormal() {
     var target1 = document.body;
     target1.classList.toggle("dark-mode");
     if (document.getElementById("switch").checked === true) {
         document.getElementById("tab1").style.color = "black";
         document.getElementById("tab2").style.color = "black";
+        document.getElementById("tab3").style.color = "black";
         document.getElementById("button").style.backgroundImage = "url('images/menu_black.png')";
         document.getElementById("button").style.backgroundColor = "white";
     } else {
         document.getElementById("tab1").style.color = "white";
         document.getElementById("tab2").style.color = "white";
+        document.getElementById("tab3").style.color = "white";
         document.getElementById("button").style.backgroundImage = "url('images/menu_white.png')";
         document.getElementById("button").style.backgroundColor = "black";
     }
 }
-
 function showTabs() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
